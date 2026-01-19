@@ -1,3 +1,5 @@
+//This file watches the inbox directory for new files and processes them accordingly. It uses chokidar to monitor the directory and triggers the file processing logic when a new file is added. It should only act as a watcher and delegate the actual processing to the fileRouter module.
+
 import chokidar from "chokidar";
 import { processFile } from "./fileRouter.js";
 import { INBOX_DIR } from "./config.js";
