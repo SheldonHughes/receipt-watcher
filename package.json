@@ -1,0 +1,17 @@
+{
+  "name": "receipt-watcher",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A tool to watch for receipts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "chrono-node": "^2.9.0",
+    "fs-extra": "^11.3.3",
+    "pdf-poppler": "^0.2.3",
+    "tesseract.js": "^7.0.0"
+  }
+}
