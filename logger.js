@@ -3,15 +3,15 @@ import { appendFile } from "node:fs/promises";
 const content = "Some content!";
 const content2 = "More content...";
 const timeStamp = new Date(Date.now()).toString();
-const logPath = "C:/Users/sheld/receipt-watcher/log.txt";
+// const logPath = "C:/Users/sheld/receipt-watcher/log.txt";
 
 //Use for testing on work computer
-// const logPath = "C:/Users/sheld/receipt-watcher/log.txt";
+const logPath = "C:/Users/sheld/Desktop/receipt-watcher/log.txt";
 
 // console.log("Content:", content);
 // console.log("Log path:", logPath);
-console.log("Log path length:", logPath.length);
-console.log(timeStamp);
+// console.log("Log path length:", logPath.length);
+// console.log(timeStamp);
 
 async function updateLog(logPath, content, timeStamp) {
   try {
