@@ -12,6 +12,7 @@
     "chrono-node": "^2.9.0",
     "fs-extra": "^11.3.3",
     "pdf-poppler": "^0.2.3",
+    "scribe.js-ocr": "^0.9.3",
     "tesseract.js": "^7.0.0"
   }
 }

@@ -1,6 +1,6 @@
 import path from "path";
 
-export const INBOX_DIR = path.resolve("D:\OneDrive\Scans");
+export const INBOX_DIR = path.resolve("D:\\OneDrive\\Scans");
 
 export const RECEIPTS_ROOT = path.resolve(
   "D:\OneDrive\Hughes Financial's\Receipts",
