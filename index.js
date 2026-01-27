@@ -8,17 +8,26 @@ console.log("Watching inbox:", INBOX_DIR);
 
 const watcher = chokidar.watch(INBOX_DIR, {
   ignoreInitial: true,
+  persistent: true,
   awaitWriteFinish: {
     stabilityThreshold: 3000,
     pollInterval: 500,
   },
 });
 
-watcher.on("add", async (filePath) => {
-  console.log("New file detected:", filePath);
+// Helper to handle the async logic
+const handleFile = async (filePath, type) => {
+  console.log(`${type} detected: ${filePath}`);
   try {
     await processFile(filePath);
   } catch (err) {
-    console.error("Processing failed:", err);
+    console.error(`Processing failed for ${filePath}:`, err);
   }
-});
+};
+
+// Listen for both new files and updated files
+watcher
+  .on("add", (path) => handleFile(path, "New file"))
+  .on("change", (path) => handleFile(path, "Updated file"))
+  .on("error", (error) => console.error(`Watcher error: ${error}`))
+  .on("ready", () => console.log("Initial scan complete. Ready for changes."));
