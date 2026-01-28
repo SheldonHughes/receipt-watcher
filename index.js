@@ -9,10 +9,23 @@ console.log("Watching inbox:", INBOX_DIR);
 const watcher = chokidar.watch(INBOX_DIR, {
   ignoreInitial: true,
   persistent: true,
+  // This tells Node to manually check files rather than waiting for OS signals
+  usePolling: true,
+  interval: 500, // Check every 0.5 seconds
+  binaryInterval: 1000, // Check binaries every 1 second
   awaitWriteFinish: {
     stabilityThreshold: 3000,
     pollInterval: 500,
   },
+  // 2. Ignore OneDrive's hidden meta-files and temp files
+  // These often trigger "change" events that you don't want to process
+  ignored: [
+    /(^|[\/\\])\../, // Ignore hidden files (starting with dot)
+    /\.tmp$/, // Ignore temporary files
+    /~\$/, // Ignore Office lock files
+    "**/desktop.ini", // Ignore Windows folder config
+    "**/Thumbs.db", // Ignore thumbnail caches
+  ],
 });
 
 // Helper to handle the async logic
