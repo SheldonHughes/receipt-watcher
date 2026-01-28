@@ -7,6 +7,10 @@ const VENDOR_MAP = {
   Entergy: ["entergy", "electric service"],
   Amazon: ["amazon.com", "amzn mktp"],
   Shell: ["shell oil", "v-power"],
+  "Brotherhood Auto Aid": ["brotherhood auto aid", "baa"],
+  "J R Parkerson": ["j r parkerson iii", "parkerson"],
+  "Leland Auto Parts": ["leland auto parts", "bumper to bumper", "leland auto"],
+  "Double Quick": ["double quick", "doublequick"],
 };
 
 export function detectVendor(text) {
