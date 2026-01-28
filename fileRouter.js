@@ -1,7 +1,8 @@
 import path from "path";
 import * as fs from "fs-extra";
-import scribe from "scribe.js-ocr"; // New Scribe import
+import scribe from "scribe.js-ocr";
 import { extractDate } from "./dateExtractor.js";
+import { detectVendor } from "./vendorDetector.js"; // Import the new tool
 import { RECEIPTS_ROOT, MANUAL_REVIEW_DIR } from "./config.js";
 
 const MONTH_FOLDERS = [
@@ -20,55 +21,53 @@ const MONTH_FOLDERS = [
 ];
 
 export async function processFile(filePath) {
-  console.log(`🔍 Processing: ${path.basename(filePath)}`);
-
   try {
-    // 1. Perform OCR/Text Extraction using Scribe
-    // Scribe returns an array of strings (one per file provided)
-    const [text] = await scribe.extractText([filePath]);
+    const results = await scribe.extractText({ pdfFiles: [filePath] });
+    const text = Array.isArray(results) ? results[0] : results;
 
     if (!text || text.trim().length === 0) {
-      console.warn(`⚠️ No text found in ${filePath}. Moving to Manual Review.`);
-      await moveToTarget(filePath, MANUAL_REVIEW_DIR);
+      await moveToTarget(filePath, MANUAL_REVIEW_DIR, path.basename(filePath));
       return;
     }
 
-    // 2. Extract Date from the OCR text
     const date = extractDate(text);
-    let targetDir;
+    const vendor = detectVendor(text);
 
-    if (!date) {
-      console.log("📅 No date detected. Routing to Manual Review.");
-      targetDir = MANUAL_REVIEW_DIR;
-    } else {
-      const monthFolder = MONTH_FOLDERS[date.getMonth()];
-      targetDir = path.join(RECEIPTS_ROOT, monthFolder);
-      console.log(
-        `📅 Date detected: ${date.toDateString()}. Routing to ${monthFolder}.`,
-      );
+    // 1. Determine New Filename
+    let finalFileName = path.basename(filePath); // Default to original
+
+    if (date) {
+      const MM = String(date.getMonth() + 1).padStart(2, "0");
+      const DD = String(date.getDate()).padStart(2, "0");
+      const YYYY = date.getFullYear();
+
+      const dateString = `${MM}-${DD}-${YYYY}`; // Result: "08-22-2025"
+      finalFileName = `${dateString} - ${vendor}.pdf`;
     }
 
-    // 3. Move the file
-    await moveToTarget(filePath, targetDir);
+    // 2. Determine Folder
+    const targetDir = date
+      ? path.join(RECEIPTS_ROOT, MONTH_FOLDERS[date.getMonth()])
+      : MANUAL_REVIEW_DIR;
+
+    console.log(
+      `🏷️  Identified: ${vendor} | 📁 Target: ${path.basename(targetDir)}`,
+    );
+
+    await moveToTarget(filePath, targetDir, finalFileName);
   } catch (err) {
-    console.error(`❌ Critical error processing ${filePath}:`, err.message);
-    // Move to manual review on error to prevent the file from getting stuck in Inbox
-    await moveToTarget(filePath, MANUAL_REVIEW_DIR);
+    console.error(`💥 Error:`, err.message);
+    await moveToTarget(filePath, MANUAL_REVIEW_DIR, path.basename(filePath));
   }
 }
 
-/**
- * Helper to handle directory assurance and moving
- */
-async function moveToTarget(filePath, targetDir) {
-  try {
-    await fs.ensureDir(targetDir);
-    const destination = path.join(targetDir, path.basename(filePath));
+async function moveToTarget(originalPath, targetDir, newFileName) {
+  await fs.ensureDir(targetDir);
 
-    // overwrite: false prevents accidentally deleting a file with the same name
-    await fs.move(filePath, destination, { overwrite: false });
-    console.log(`✅ Successfully moved to: ${destination}`);
-  } catch (moveErr) {
-    console.error(`📂 File Move Error: ${moveErr.message}`);
-  }
+  // Clean up filename (remove characters Windows doesn't like)
+  const safeName = newFileName.replace(/[<>:"/\\|?*]/g, "");
+  const destination = path.join(targetDir, safeName);
+
+  await fs.move(originalPath, destination, { overwrite: false });
+  console.log(`✅ Saved as: ${safeName} and moved to ${targetDir}`);
 }
