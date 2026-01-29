@@ -1,0 +1,6 @@
+[8:46:09 PM] ---Application started---
+[8:48:09 PM] ---Application started---
+[8:58:10 PM] ---Application started---
+[8:59:06 PM] New file detected: Scan - 2026-01-28 20_48_36.pdf
+[8:59:07 PM] Identified: Zoe Coffee Co. | Target Folder: 01 January
+[8:59:07 PM] ✅ Saved as: 01-20-2026 - Zoe Coffee Co..pdf

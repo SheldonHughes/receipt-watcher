@@ -1,32 +1,44 @@
-import { appendFile } from "node:fs/promises";
+import { appendFile, readdir, unlink, stat } from "node:fs/promises";
+import path from "node:path";
+import { LOG_PATH } from "./config.js"; // Add this to your config
 
-const content = "Some content!";
-const content2 = "More content...";
-const timeStamp = new Date(Date.now()).toString();
-// const logPath = "C:/Users/sheld/receipt-watcher/log.txt";
+export async function updateLog(content) {
+  const now = new Date();
+  const dateString = now.toISOString().split("T")[0]; // Result: "2026-01-28"
+  const timeString = now.toLocaleTimeString();
 
-//Use for testing on work computer
-const logPath = "C:/Users/sheld/Desktop/receipt-watcher/log.txt";
+  // We create a new file for every day: log-2026-01-28.txt
+  const dailyLogPath = path.join(LOG_PATH, `log-${dateString}.txt`);
 
-// console.log("Content:", content);
-// console.log("Log path:", logPath);
-// console.log("Log path length:", logPath.length);
-// console.log(timeStamp);
-
-async function updateLog(logPath, content, timeStamp) {
   try {
-    if (!logPath) {
-      throw new Error("No log path found. Please check the logpath string.");
-    }
-
-    const data = `\n${content} ${timeStamp}`;
-    console.log(data);
-    await appendFile(logPath, data);
-    console.log(`${timeStamp} File appended successfully.`);
+    const data = `[${timeString}] ${content}\n`;
+    await appendFile(dailyLogPath, data);
   } catch (err) {
-    console.error(`${timeStamp} Failed to write to log.`);
-    console.error(err.message);
+    console.error(`Failed to write to log: ${err.message}`);
   }
 }
 
-updateLog(logPath, content2, timeStamp);
+/**
+ * Deletes log files older than 14 days
+ */
+export async function pruneLogs(daysToKeep = 14) {
+  try {
+    const files = await readdir(LOG_PATH);
+    const now = Date.now();
+    const expiryMs = daysToKeep * 24 * 60 * 60 * 1000;
+
+    for (const file of files) {
+      if (file.startsWith("log-") && file.endsWith(".txt")) {
+        const filePath = path.join(LOG_PATH, file);
+        const fileStat = await stat(filePath);
+
+        if (now - fileStat.mtimeMs > expiryMs) {
+          await unlink(filePath);
+          console.log(`Cleaned up old log: ${file}`);
+        }
+      }
+    }
+  } catch (err) {
+    console.error("Error pruning logs:", err.message);
+  }
+}

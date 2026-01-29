@@ -7,3 +7,5 @@ export const RECEIPTS_ROOT = path.resolve(
 );
 
 export const MANUAL_REVIEW_DIR = path.join(RECEIPTS_ROOT, "Manual Review");
+
+export const LOG_PATH = "C:/Users/sheld/receipt-watcher/";

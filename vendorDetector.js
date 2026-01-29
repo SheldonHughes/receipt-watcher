@@ -11,6 +11,7 @@ const VENDOR_MAP = {
   "J R Parkerson": ["j r parkerson iii", "parkerson"],
   "Leland Auto Parts": ["leland auto parts", "bumper to bumper", "leland auto"],
   "Double Quick": ["double quick", "doublequick"],
+  "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"],
 };
 
 export function detectVendor(text) {

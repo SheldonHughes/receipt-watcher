@@ -1,10 +1,16 @@
 //This file watches the inbox directory for new files and processes them accordingly. It uses chokidar to monitor the directory and triggers the file processing logic when a new file is added. It should only act as a watcher and delegate the actual processing to the fileRouter module.
 
+import path from "path";
+import { updateLog, pruneLogs } from "./logger.js";
 import chokidar from "chokidar";
 import { processFile } from "./fileRouter.js";
 import { INBOX_DIR } from "./config.js";
 
 console.log("Watching inbox:", INBOX_DIR);
+updateLog("---Application started---");
+
+// Clean up old logs (older than 14 days) on startup
+pruneLogs(14);
 
 const watcher = chokidar.watch(INBOX_DIR, {
   ignoreInitial: true,
@@ -28,13 +34,26 @@ const watcher = chokidar.watch(INBOX_DIR, {
   ],
 });
 
-// Helper to handle the async logic
+// Track files currently being processed
+const processing = new Set();
+
 const handleFile = async (filePath, type) => {
+  if (processing.has(filePath)) return; // Skip if already working on it
+
+  processing.add(filePath);
   console.log(`${type} detected: ${filePath}`);
+  await updateLog(`${type} detected: ${path.basename(filePath)}`);
+
   try {
     await processFile(filePath);
   } catch (err) {
-    console.error(`Processing failed for ${filePath}:`, err);
+    await updateLog(
+      `ERROR: Processing failed for ${filePath} - ${err.message}`,
+    );
+    console.error(`🤦‍♂️ Error: ${err.message}`);
+  } finally {
+    // Remove from the set after a delay to account for OneDrive "echo" events
+    setTimeout(() => processing.delete(filePath), 5000);
   }
 };
 
