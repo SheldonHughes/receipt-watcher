@@ -1,0 +1,24 @@
+{
+  "paths": {
+    "inbox": "D:/OneDrive/Scans",
+    "receiptsRoot": "D:/OneDrive/Hughes Financial's/Receipts",
+    "manualReview": "D:/OneDrive/Hughes Financial's/Receipts/Manual Review",
+    "logs": "C:/Users/sheld/Desktop/receipt-watcher/logs"
+  },
+  "vendors": {
+    "Posigen": ["posigen", "solar solutions"],
+    "Stop & Shop": ["stop n shop", "stop & shop", "stop&shop"],
+    "Entergy": ["entergy", "electric service"],
+    "Amazon": ["amazon.com", "amzn mktp"],
+    "Shell": ["shell oil", "v-power"],
+    "Brotherhood Auto Aid": ["brotherhood auto aid", "baa"],
+    "J R Parkerson": ["j r parkerson iii", "parkerson"],
+    "Leland Auto Parts": [
+      "leland auto parts",
+      "bumper to bumper",
+      "leland auto"
+    ],
+    "Double Quick": ["double quick", "doublequick"],
+    "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"]
+  }
+}
