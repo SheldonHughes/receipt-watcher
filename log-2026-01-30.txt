@@ -1,0 +1,7 @@
+[7:10:36 AM] ---Application started---
+[7:14:28 AM] New file detected: Scan - 2026-01-30 07_12_13.pdf
+[7:14:29 AM] Identified: Stop & Shop | Target Folder: 01 January
+[7:14:29 AM] ✅ Saved as: Stop & Shop - 01-17-2273.pdf
+[7:22:53 AM] New file detected: Scan - 2026-01-30 07_21_24.pdf
+[7:22:54 AM] Identified: Unknown Vendor | Target Folder: 01 January
+[7:22:54 AM] ✅ Saved as: Unknown Vendor - 01-10-4190-1.pdf

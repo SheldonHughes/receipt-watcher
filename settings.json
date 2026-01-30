@@ -5,7 +5,7 @@
     "manualReview": "D:/OneDrive/Hughes Financial's/Receipts/Manual Review",
     "logs": "C:/Users/sheld/Desktop/receipt-watcher/logs"
   },
-  "vendors": {
+  "vendor": {
     "Posigen": ["posigen", "solar solutions"],
     "Stop & Shop": ["stop n shop", "stop & shop", "stop&shop"],
     "Entergy": ["entergy", "electric service"],
@@ -19,6 +19,7 @@
       "leland auto"
     ],
     "Double Quick": ["double quick", "doublequick"],
-    "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"]
+    "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"],
+    "Walmart": ["walmart", "wa1mart"]
   }
 }
