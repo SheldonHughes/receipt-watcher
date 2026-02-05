@@ -11,6 +11,7 @@
     "chokidar": "^5.0.0",
     "chrono-node": "^2.9.0",
     "fs-extra": "^11.3.3",
+    "node-windows": "^1.0.0-beta.8",
     "pdf-poppler": "^0.2.3",
     "scribe.js-ocr": "^0.9.3",
     "tesseract.js": "^7.0.0"

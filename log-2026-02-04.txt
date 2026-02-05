@@ -7,3 +7,4 @@
 [7:15:08 PM] ✅ Saved as: Unknown Vendor - 02-01-514.pdf
 [7:15:08 PM] Identified: Unknown Vendor | Target Folder: 02 February
 [7:15:08 PM] ✅ Saved as: Unknown Vendor - 02-01-514-1.pdf
+[12:36:11 PM] ---Application started---

@@ -1,0 +1,2 @@
+2026-02-04 21:30:43 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\sheld\receipt-watcher\node_modules\node-windows\lib\wrapper.js --file C:\Users\sheld\receipt-watcher\index.js --scriptoptions= --log "Receipt Watcher OCR wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2026-02-04 21:30:43 - Started 4232
