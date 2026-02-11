@@ -20,8 +20,16 @@
     ],
     "Double Quick": ["double quick", "doublequick", "Double Duick"],
     "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"],
-    "Walmart": ["walmart", "wa1mart"],
+    "Walmart": ["walmart", "wa1mart", "WM Supercenter"],
     "Dollar General": ["dollar general", "d0llar general", "do11ar general"],
-    "Julia R Hill": ["Julia R Hill", "Julia R", "Julia Hill"]
+    "Julia R Hill": ["Julia R Hill", "Julia R", "Julia Hill"],
+    "Pit Stop": ["pit stop", "pitstop", "408 HWY 82 WEST"],
+    "Panda Express": ["panda express", "panda expre55", "panda exp"],
+    "T J Maxx": ["t j maxx", "tj maxx", "t.j. maxx"],
+    "David's Burgers": ["david's burgers", "davids burgers", "david's burg3rs"],
+    "Hobby Lobby": ["hobby lobby", "hobby l0bby", "hobby l0bby"],
+    "Love's": ["love's travel stop", "loves", "love's", "loves.com "],
+    "Exxon": ["exxon", "exxonmobil", "exxon express"],
+    "Arby's": ["arby's", "arbys", "arby s", "arbys.com"]
   }
 }

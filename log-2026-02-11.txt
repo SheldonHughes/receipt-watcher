@@ -1,0 +1,92 @@
+[8:46:37 PM] ---Application started---
+[8:48:08 PM] New file detected: New Scan.pdf
+[8:48:19 PM] DEBUG OCR (New Scan.pdf): No. 149643 [NL] PIT STOP QUICK LUBE #0001 408 HWY 82 WEST LELAND, MS 38756 662.686.0029 [NL] 02/05/2026 03:45 PM THANKYOUFROMTHEPWSTOPCREW [NL] Customer Vehicle [NL] MS. RACHEL HUGHES (REP) [NL] 387 6...
+[8:48:19 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[8:50:19 PM] ERROR: Processing failed for D:\OneDrive\Scans\New Scan.pdf - EBUSY: resource busy or locked, rename 'D:\OneDrive\Scans\New Scan.pdf' -> 'D:\OneDrive\Hughes Financial's\Receipts\Manual Review\New Scan.pdf'
+[8:52:45 PM] New file detected: New Scan.pdf
+[8:52:55 PM] DEBUG OCR (New Scan.pdf): .%£§Qfir_ [NL] No. 149643 [NL] PIT STOP QUICK LUBE #0001 408 HWY 82 WEST LELAND, MS 38756 662.686.0029 [NL] 02/05/2026 03:45 PM THANKYOUFROMTHEPWSTOPCREW [NL] Customer Vehicle [NL] MS. RACHEL HUGHES (...
+[8:52:55 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[8:54:09 PM] ✅ Saved as: New Scan.pdf
+[8:59:19 PM] ---Application started---
+[8:59:45 PM] New file detected: Unknown Vendor - 02-06-6739.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-1.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-2.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-3.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-5.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-4.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-6.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-7.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-10.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-9.pdf
+[8:59:45 PM] New file detected: Unknown Vendor - 02-09-2026-8.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-1.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-3.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026.pdf
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-09-2026-3.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-2.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-1.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-4.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-2.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-3.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-5.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-4.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-7.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-5.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-6.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:44 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-6.pdf
+[9:00:44 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-10.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:44 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:45 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-7.pdf
+[9:00:45 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-9.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:45 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:45 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-8.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:45 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-8.pdf
+[9:00:45 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:45 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-9.pdf
+[9:00:45 PM] DEBUG OCR (Unknown Vendor - 02-06-6739.pdf): ("] My [NL] E i ] n hull [NL] Buy 0nd Get On: nny Tea (equal or esse wvilue) by visiting wm 1 zclumcmmm Validation coda: -- [NL] Eycirs Sarvey Doda [NL] 430 days 10311-01306 20 .:. ‘ 4 0271 ~00085-1 [...
+[9:00:45 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:00:45 PM] ✅ Saved as: Unknown Vendor - 02-10-2026-10.pdf
+[9:02:29 PM] New file detected: Unknown Vendor - 02-10-2026-5.pdf
+[9:02:30 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-5.pdf): Welcome To Loves#458 408 MN. State Hwy 125 Stafford MO pzZ/6/26 15:21 [NL] Pump Gallons Price 84 11.228 $ 2.299 [NL] Product Amount Unleaded $ 25.79 [NL] TOTAL SALE $ 25.79 [NL] HARARE RHRRET AG Card:...
+[9:02:30 PM] Identified: Love's | Target Folder: 06 June
+[9:02:30 PM] ✅ Saved as: Love's - 06-26-2026.pdf
+[9:06:29 PM] ---Application started---
+[9:06:42 PM] New file detected: Unknown Vendor - 02-10-2026.pdf
+[9:06:47 PM] DEBUG OCR (Unknown Vendor - 02-10-2026.pdf): Give us feedback @ survey.walmart.com Thank vou! ID #:7WOWSR15RRPD [NL] Walmart 3;<. WM Supercenter 308-381-4970 Mgr. KIMBERLY 3501 S LOCUST ST [NL] # ITEMS SOLD 3 TC# 0580fl0843 7220 1398 2444 [NL] I il 0 ' 1 ‘i il i [NL] FE iiwiisi Ni th [NL] 1 i ii [NL] HSY-ETS CANE 034000109740 F 1.24 N GILLETTE...
+[9:06:47 PM] Identified: Walmart | Target Folder: 02 February
+[9:06:47 PM] ✅ Saved as: Walmart - 02-07-2026.pdf
+[9:08:36 PM] ---Application started---
+[9:08:46 PM] New file detected: Unknown Vendor - 02-10-2026-10.pdf
+[9:08:47 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-10.pdf): Arby's [NL] Restaurant #07322 1419 North Highway 62-65 Harrison, AR 72601 Phone 870-743-6739 [NL] 2/6/2026 1:37:25 PM [NL] Order Id: AAC64NGLAECJ sheldon- Eat In Employee: MAKAYLA Total Items: 9 [NL] sheldon [NL] 1 Smoked Brisket Meal 1 Smoked Brisket-MD 1 Drink-MD 1 Jalapeno Bite 5 PC-SM 1 RB Doubl...
+[9:08:47 PM] Identified: Arby's | Target Folder: 02 February
+[9:08:47 PM] ✅ Saved as: Arby's - 02-06-6739.pdf
+[9:09:17 PM] New file detected: Unknown Vendor - 02-10-2026-8.pdf
+[9:09:20 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-8.pdf): 184 HIGHWAY B5 NORTH PARKER’S FILLING STA HHHHHH HHH 308 MCGEHEE , AR 71654 B2/09/2026 653262185 B6:41:46 PM [NL] HEHHHKH HH HHYBT749 Visa [NL] INVOICE 888891 AUTH B8562D [NL] PUMP# 7 [NL] Regular 12.9866 PRICE, GAL $2.799 [NL] FUEL TOTAL $ 36.35 [NL] TOTAL = :& “36:35 CREDIT 436185 [NL] Customer -a...
+[9:09:20 PM] Identified: Brotherhood Auto Aid | Target Folder: 02 February
+[9:09:20 PM] ✅ Saved as: Brotherhood Auto Aid - 02-09-2026.pdf
+[9:11:06 PM] New file detected: Unknown Vendor - 02-10-2026-1.pdf
+[9:11:14 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-1.pdf): xx PURCHASE xx [NL] Panda Express #1067 Saint Joseph, MO [NL] (816)232-6899 [NL] 2/7/2026 12:38:18 PM -HERE- Order: 171377 Server: Elisa B [NL] 1 Panda Bowl 8.50 Chow Mein: 1/2 Chow Mein: 1/2 Orange Chicken 1 Panda Bowl 8.50 Chow Mein: 1/2 Chow Mein: 1/2 Orange Chicken 1 Plate 10.30 Chow Mein: 1/2 C...
+[9:11:14 PM] Identified: Panda Express | Target Folder: 02 February
+[9:11:14 PM] ✅ Saved as: Panda Express - 02-07-6899.pdf
+[9:11:32 PM] New file detected: Unknown Vendor - 02-10-2026-2.pdf
+[9:11:36 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-2.pdf): "fi‘" [NL] RB Ba A [NL] ed ™ [NL] 0B - Lewis [NL] 1200 S Amity Rd Conway, AR 72032 Phone (501) 703-0571 [NL] 2/9/2026 3:58:17 PM Order Id: AAARGNGSAEBK 81 shelden - Dine In Order Number: 134 Employee: Term2 Total Items: 3 [NL] 81 “shelden [NL] 1 SINGLE BEEF $9.49 #1 COMBO $0.00 Mustard $0.00 Lettuce...
+[9:11:36 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:11:36 PM] ✅ Saved as: Unknown Vendor - 02-09-571.pdf
+[9:12:14 PM] New file detected: Unknown Vendor - 02-10-2026-3.pdf
+[9:12:16 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-3.pdf): 1889 Hy 82 East Leland HS 38756 [NL] 1080 Hwy 82 East Double Quick EA Leland, MS 38756 82/85f2825 718069887 85:19:58 PM [NL] AHHRAHAHHHHASE49 Visa [NL] INVOICE ®113 AUTH 829470 REF ©1413 [NL] PUMP# 13 [NL] REGULAR 15.2946 PRICE/GAL $2.419 [NL] FUEL TOTAL $$ 37.88 [NL] TOTAL = $ 37.00 CREDIT + 37.08 ...
+[9:12:16 PM] Identified: Double Quick | Target Folder: 02 February
+[9:12:16 PM] ✅ Saved as: Double Quick - 02-10-2026.pdf
+[9:12:49 PM] New file detected: Unknown Vendor - 02-10-2026-6.pdf
+[9:12:52 PM] DEBUG OCR (Unknown Vendor - 02-10-2026-6.pdf): Loves [NL] Store #458 400 N State HWY 125 Strafford, MO 65757 [NL] (417) 736-9043 [NL] 02/06/2026 Tkt #3979019 Type: SALE (ORIGINAL) Qty Name Price Total [NL] 1 Nerds Gummy Clusters 3.89 3.89 [NL] Subtotal 3.89 Sales Tax 0.20 Total 4.09 [NL] Received: VISA 4.09 xxwxxumxxxxx6749 TAP [NL] Auth No: 000...
+[9:12:52 PM] Identified: Love's | Target Folder: 02 February
+[9:12:52 PM] ✅ Saved as: Love's - 02-06-9043.pdf

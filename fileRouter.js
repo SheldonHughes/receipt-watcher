@@ -32,7 +32,7 @@ export async function processFile(filePath) {
 
     if (text) {
       //Add ocr results to log for debugging
-      const cleanTextForLog = text.replace(/\n/g, " [NL] ").substring(0, 200);
+      const cleanTextForLog = text.replace(/\n/g, " [NL] ").substring(0, 300);
       await updateLog(
         `DEBUG OCR (${path.basename(filePath)}): ${cleanTextForLog}...`,
       );
