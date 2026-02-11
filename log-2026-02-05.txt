@@ -9,3 +9,14 @@
 [9:14:29 PM] Identified: Entergy | Target Folder: 02 February
 [9:14:40 PM] ✅ Saved as: Entergy - 02-04-2026.pdf
 [9:30:44 PM] ---Application started---
+[10:44:06 PM] New file detected: PXL_20260204_180342363.jpg
+[10:44:06 PM] New file detected: Scan - 2026-02-04 12_34_54.pdf
+[10:44:06 PM] ✅ Saved as: PXL_20260204_180342363.jpg
+[10:44:06 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[10:44:06 PM] ✅ Saved as: Unknown Vendor - 01-19-2026.pdf
+[8:07:45 AM] New file detected: New Scan 02.pdf
+[8:07:45 AM] New file detected: New Scan 01.pdf
+[8:07:48 AM] Identified: Double Quick | Target Folder: 01 January
+[8:07:48 AM] ✅ Saved as: Double Quick - 01-24-2026.pdf
+[8:07:48 AM] Identified: Double Quick | Target Folder: 01 January
+[8:07:48 AM] ✅ Saved as: Double Quick - 01-24-2026-1.pdf

@@ -30,6 +30,13 @@ export async function processFile(filePath) {
     const results = await scribe.extractText({ pdfFiles: [filePath] });
     const text = Array.isArray(results) ? results[0] : results;
 
+    if (text) {
+      //Add ocr results to log for debugging
+      const cleanTextForLog = text.replace(/\n/g, " [NL] ").substring(0, 200);
+      await updateLog(
+        `DEBUG OCR (${path.basename(filePath)}): ${cleanTextForLog}...`,
+      );
+    }
     if (!text || text.trim().length === 0) {
       await moveToTarget(filePath, MANUAL_REVIEW_DIR, path.basename(filePath));
       return;
