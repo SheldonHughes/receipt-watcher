@@ -10,54 +10,66 @@ console.log("Watching inbox:", INBOX_DIR);
 updateLog("---Application started---");
 
 // Clean up old logs (older than 14 days) on startup
-pruneLogs(14);
+pruneLogs(10);
 
+// --- QUEUE LOGIC ---
+const fileQueue = [];
+let isProcessing = false;
+const processingSet = new Set(); // To prevent "echo" triggers
+
+async function workQueue() {
+  if (isProcessing || fileQueue.length === 0) return;
+
+  isProcessing = true;
+  const nextFile = fileQueue.shift();
+
+  try {
+    await processFile(nextFile);
+  } catch (err) {
+    console.error(`Queue error while processing: ${err.message}`);
+    await updateLog(`ERROR: Queue processing failed - ${err.message}`);
+  } finally {
+    isProcessing = false;
+    // Small delay before next file to let CPU/OneDrive breathe
+    setTimeout(workQueue, 500);
+  }
+}
+
+// --- THE SINGLE HANDLEFILE FUNCTION ---
+const handleFile = async (filePath, type) => {
+  const fileName = path.basename(filePath);
+
+  // 1. Ignore if already in the queue or recently processed (the 5s cooldown)
+  if (processingSet.has(filePath) || fileQueue.includes(filePath)) return;
+
+  // 2. Add to cooldown set
+  processingSet.add(filePath);
+
+  console.log(`+ ${type} detected: ${fileName}`);
+  await updateLog(`${type} detected: ${fileName}`);
+
+  // 3. Push to queue and trigger worker
+  fileQueue.push(filePath);
+  workQueue();
+
+  // 4. Clean up the cooldown set after 5 seconds
+  setTimeout(() => processingSet.delete(filePath), 5000);
+};
+
+// --- WATCHER SETUP ---
 const watcher = chokidar.watch(INBOX_DIR, {
   ignoreInitial: true,
   persistent: true,
-  // This tells Node to manually check files rather than waiting for OS signals
   usePolling: true,
-  interval: 500, // Check every 0.5 seconds
-  binaryInterval: 1000, // Check binaries every 1 second
+  interval: 500,
+  binaryInterval: 1000,
   awaitWriteFinish: {
     stabilityThreshold: 3000,
     pollInterval: 500,
   },
-  // 2. Ignore OneDrive's hidden meta-files and temp files
-  // These often trigger "change" events that you don't want to process
-  ignored: [
-    /(^|[\/\\])\../, // Ignore hidden files (starting with dot)
-    /\.tmp$/, // Ignore temporary files
-    /~\$/, // Ignore Office lock files
-    "**/desktop.ini", // Ignore Windows folder config
-    "**/Thumbs.db", // Ignore thumbnail caches
-  ],
+  ignored: [/(^|[\/\\])\../, /\.tmp$/, /~\$/, "**/desktop.ini", "**/Thumbs.db"],
 });
 
-// Track files currently being processed
-const processing = new Set();
-
-const handleFile = async (filePath, type) => {
-  if (processing.has(filePath)) return; // Skip if already working on it
-
-  processing.add(filePath);
-  console.log(`${type} detected: ${filePath}`);
-  await updateLog(`${type} detected: ${path.basename(filePath)}`);
-
-  try {
-    await processFile(filePath);
-  } catch (err) {
-    await updateLog(
-      `ERROR: Processing failed for ${filePath} - ${err.message}`,
-    );
-    console.error(`🤦‍♂️ Error: ${err.message}`);
-  } finally {
-    // Remove from the set after a delay to account for OneDrive "echo" events
-    setTimeout(() => processing.delete(filePath), 5000);
-  }
-};
-
-// Listen for both new files and updated files
 watcher
   .on("add", (path) => handleFile(path, "New file"))
   .on("change", (path) => handleFile(path, "Updated file"))
