@@ -2,6 +2,8 @@ const KEYWORDS = {
   POSITIVE: [
     /invoice date/i,
     /billing date/i,
+    /bill date/i,
+    /receipt date/i,
     /transaction date/i,
     /date:/i,
     /sold on/i,
