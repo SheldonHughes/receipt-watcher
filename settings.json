@@ -18,18 +18,63 @@
       "bumper to bumper",
       "leland auto"
     ],
-    "Double Quick": ["double quick", "doublequick", "Double Duick"],
+    "Double Quick": [
+      "double quick",
+      "doublequick",
+      "Double Duick",
+      "double quck",
+      "refuel rewards"
+    ],
     "Zoe Coffee Co.": ["Zoe Coffee company", "zoe coffee", "z0e coffee"],
     "Walmart": ["walmart", "wa1mart", "WM Supercenter"],
     "Dollar General": ["dollar general", "d0llar general", "do11ar general"],
     "Julia R Hill": ["Julia R Hill", "Julia R", "Julia Hill"],
     "Pit Stop": ["pit stop", "pitstop", "408 HWY 82 WEST"],
     "Panda Express": ["panda express", "panda expre55", "panda exp"],
-    "T J Maxx": ["t j maxx", "tj maxx", "t.j. maxx"],
+    "T J Maxx": ["t j maxx", "tj maxx", "t.j. maxx", "tjmaxx.com", "TJ-MODK"],
     "David's Burgers": ["david's burgers", "davids burgers", "david's burg3rs"],
     "Hobby Lobby": ["hobby lobby", "hobby l0bby", "hobby l0bby"],
     "Love's": ["love's travel stop", "loves", "love's", "loves.com "],
     "Exxon": ["exxon", "exxonmobil", "exxon express"],
-    "Arby's": ["arby's", "arbys", "arby s", "arbys.com"]
+    "Arby's": ["arby's", "arbys", "arby s", "arbys.com"],
+    "Wendy's": ["wendy's", "wendys", "wendy s", "wendys.com"],
+    "McDonald's": ["mcdonald's", "mcdonalds", "mcdonald s", "mcdonalds.com"],
+    "Burger King": ["burger king", "burger k1ng", "burger king.com"],
+    "Subway": ["subway", "sub way", "subw@y"],
+    "Deer Creek Hardware": [
+      "deer creek hardware",
+      "deer creek hardw@re",
+      "deer creek hardw4re"
+    ],
+    "Zaxbys": ["zaxbys", "zaxby s", "zaxbys.com", "zax"],
+    "Leland Drug Company": [
+      "leland drug company",
+      "leland drug co",
+      "leland drug",
+      "leland drg cmpny",
+      "Lel and Drug CoMpany"
+    ],
+    "McAlister's Deli": [
+      "mc alister's deli",
+      "mcalister's deli",
+      "mc alister s deli",
+      "mcalisters deli"
+    ],
+    "The Big Biscuit": [
+      "the big biscuit",
+      "big biscuit",
+      "the big b1scuit",
+      "the big bisc1ut",
+      "bigbiscuit.com"
+    ],
+    "Dairy Queen": ["dairy queen", "dairy quee", "dairy que3n", "dairy quee3n"],
+    "Kroger": ["kroger", "kr0ger", "krog3r"],
+    "Black Bayou Water": [
+      "black bayou water",
+      "black bayou w@ter",
+      "black bayou w4ter",
+      "black bayou w@t3r",
+      "blackbayouwater.com"
+    ]
   }
 }

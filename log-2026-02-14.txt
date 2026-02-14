@@ -1,0 +1,61 @@
+[8:59:11 AM] ---Application started---
+[9:04:39 AM] New file detected: Scan - 2026-02-14 09_02_18.pdf
+[9:04:39 AM] New file detected: Scan - 2026-02-14 09_02_44.pdf
+[9:04:39 AM] New file detected: Scan - 2026-02-14 09_03_08.pdf
+[9:04:40 AM] DEBUG OCR (Scan - 2026-02-14 09_02_18.pdf): Sale [NL] Leland Drug Co. 311 North Main Street Leland, MS 38756 [NL] Ph:662-771-6550 [NL] Receipt: 97464 [NL] Date: 02/13/26 03:13PM [NL] Cashier: TIFFANY [NL] Register: POS Lane1 [NL] Customer: SHELDON HUGHES [NL] 446 BURDETT RD LELAND,MS 38756 H:(662) 695-1205 M: (662) 695-0186 [NL] Item Flags [N...
+[9:04:40 AM] Identified: Leland Drug Company | Target Folder: 02 February
+[9:04:40 AM] ✅ Saved as: Leland Drug Company - 02-13-2026.pdf
+[9:04:41 AM] DEBUG OCR (Scan - 2026-02-14 09_02_44.pdf): Lel and Drug CoMpany 311 N Main St [NL] Leland, MS 38756 662-771-6550 [NL] 02/13/2026 14:07 [NL] Sale Irans #: 13 Batch #: 38? [NL] CREDIT CARD [NL] VISA CHIP READ [NL] Entry Type: CONTACI [NL] ******6 1Q4 **/** [NL] BASE AMT: TOTAL AMT: [NL] $20.13 USD $20.13 [NL] Resp: APPROVAL 816788 Code: [NL] 6...
+[9:04:41 AM] Identified: Unknown Vendor | Target Folder: 02 February
+[9:04:41 AM] ✅ Saved as: Unknown Vendor - 02-13-6550.pdf
+[9:04:41 AM] DEBUG OCR (Scan - 2026-02-14 09_03_08.pdf): Thank you! McAlister's Deli [NL] 1240 E Northside Dr [NL] Jackson, MS (601) 982-3883 [NL] 59 [NL] Host: Peggy 59 [NL] Order Type: Dine-In [NL] CHOOSE 2 C2 REUBEN [NL] C2 Sand Pickle Spear C2 CUP COUNTRY POTATO CHOOSE 2 C2 CUBAN [NL] C2 Sand Pickle Spear C2 CUP BROCCOLI LEMONADE DIET COKE [NL] Subtot...
+[9:04:41 AM] Identified: McAlister's Deli | Target Folder: 02 February
+[9:04:41 AM] ✅ Saved as: McAlister's Deli - 02-13-2026.pdf
+[9:08:32 AM] New file detected: Unknown Vendor - 01-14-8585.pdf
+[9:08:40 AM] DEBUG OCR (Unknown Vendor - 01-14-8585.pdf): 7671 Goodman Rd. Horn Lake. MS 38637 Phone 662~349~8585 [NL] 1/14/2026 Order Td: AGAMANEBAGRM [THs = Drive Thru [NL] Fripp oyee: Monique Harrison Closed By Employee: Selena E [NL] “11114 5 _f [NL] 1 #2 Chicken Finger P ate Meal 111.79 1 (4) Finger Plate Zax Sauce $0.00 1 Fegular Fries 1 Fry 1 Small ...
+[9:08:40 AM] Identified: Zaxbys | Target Folder: 01 January
+[9:08:40 AM] ✅ Saved as: Zaxbys - 01-14-8585.pdf
+[9:09:08 AM] New file detected: Unknown Vendor - 01-15-2026.pdf
+[9:09:12 AM] DEBUG OCR (Unknown Vendor - 01-15-2026.pdf): Thanks for shopping our friendly store. Deer Creek Hardware [NL] Co. [NL] 523 Hwy 82 East Leland, MS 38756 662-771-8030 [NL] ITEM OTY SALE/REG EXT 740265616065 1.00 7.59 7.59 3396744 CG [NL] GROMMET DESK BLK 2 IN [NL] 032076461041 1.00 4.99 4.99 0975722 PK [NL] CABLE TIE NATURAL 4IN [NL] 04524250979...
+[9:09:12 AM] Identified: Deer Creek Hardware | Target Folder: 01 January
+[9:09:12 AM] ✅ Saved as: Deer Creek Hardware - 01-15-2026.pdf
+[9:09:33 AM] New file detected: Unknown Vendor - 01-17-2026.pdf
+[9:09:36 AM] DEBUG OCR (Unknown Vendor - 01-17-2026.pdf): Thanks for shopping our friendly store. Deer Creek Hardware [NL] Co. [NL] 523 Hwy 82 East Leland, MS 38756 662-771-8030 [NL] ITEM QTY SALE/REG EXT 004 2.00 11.50 23.00 [NL] Each RIVER’S BEND COFFEE- 12 0Z [NL] 054000751301 1.00 3.49 3.49 6110266 EA [NL] SHOP TOWELS ROLL CASE DISPLA [NL] 645397002178...
+[9:09:36 AM] Identified: Deer Creek Hardware | Target Folder: 01 January
+[9:09:36 AM] ✅ Saved as: Deer Creek Hardware - 01-17-2026.pdf
+[9:10:51 AM] ---Application started---
+[9:11:05 AM] New file detected: Unknown Vendor - 01-20-2026.pdf
+[9:11:09 AM] DEBUG OCR (Unknown Vendor - 01-20-2026.pdf): DOUBLE QUCK #78 103 HIGHWAY82 INDIANOLA MS 87039 [NL] 01/20/2026 8:28:46 AM Register: 2 Trans #: 944 Op 1D: 81700 [NL] Your cashier: Mariah [NL] Blue Diamon Chili Lm 1.5 $2.49 101 Blue Diamond Almne Rstd $2.49 101 Yup! MIk Choc 14oz $3.69 101 [NL] Subtotal = $8.67 Tax = $0.61 [NL] Total = $9.28 Chan...
+[9:11:09 AM] Identified: Double Quick | Target Folder: 01 January
+[9:11:09 AM] ✅ Saved as: Double Quick - 01-20-2026.pdf
+[9:14:16 AM] New file detected: Scan - 2026-02-14 09_11_57.pdf
+[9:14:16 AM] DEBUG OCR (Scan - 2026-02-14 09_11_57.pdf): DOLLAR GENERAL STORE #8030 [NL] 331 HIGHWAY 82 E, LELAND, MS 38756 [NL] (662) 771-1455 SALE TRANSACTION [NL] N MEGA SMARTIES 11206005003 [NL] N MEGA SMARTIES 11206005003 [NL] N CRETORS CHEESE 732494000524 [NL] N XXL TOSTITOS BITE 2840051 7966 N XXL TOSTITOS BITE 28400517966 LITERACY ROUND UP 4300019...
+[9:14:16 AM] Identified: Dollar General | Target Folder: 01 January
+[9:14:16 AM] ✅ Saved as: Dollar General - 01-30-2026-1.pdf
+[9:34:24 AM] ---Application started---
+[9:34:36 AM] New file detected: Unknown Vendor - 02-10-2026-7.pdf
+[9:34:42 AM] DEBUG OCR (Unknown Vendor - 02-10-2026-7.pdf): Bi Biscuit [NL] The Big Biscuit 139 N Belt Highway Suite C [NL] St. Joseph, M0 64506 [NL] Server: Katie I Check $15 Table 101 Guest Count: 2 Ordered: 2/9/26 8:28 AM [NL] 1 Kansas City Omelet $15.49 Country Grits Biscuit [NL] 2 Private Blend Coffee $7.98 1 Cinnamon Roll Pancakes $11.99 1 Black Label ...
+[9:34:42 AM] Identified: The Big Biscuit | Target Folder: 02 February
+[9:34:42 AM] ✅ Saved as: The Big Biscuit - 02-09-2026.pdf
+[2:41:19 PM] New file detected: Receipts Scans 07.pdf
+[2:41:21 PM] DEBUG OCR (Receipts Scans 07.pdf): Welcome To Loves#966 651 E. Mercer [NL] Jasper MO 64755 P2/E9/26 12:04 [NL] Pump Gallons Price 83 12.755 $ 2.239 [NL] Product Amount Unleaded $ 28.56 [NL] TOTAL SALE $ 28.56 [NL] HRBRBHREREREET Card: VISA Approval: BE374D Sale - Tap [NL] Ticket: 19983 [NL] AID: ANDREEEEA3TE1E APP: Visa Credit No CYM...
+[2:41:21 PM] Identified: Love's | Target Folder: 09 September
+[2:41:21 PM] ✅ Saved as: Love's - 09-26-2025.pdf
+[2:41:35 PM] New file detected: Unknown Vendor - 02-09-2026-3.pdf
+[2:41:41 PM] DEBUG OCR (Unknown Vendor - 02-09-2026-3.pdf): TJ-MODK [NL] GREENVILLE MALL 1651 HWY 1 SOUTH GREENVILLE, MS 38701 United States 662-335-3784 [NL] REGULAR SALE [NL] 04 - BEST BRANDS CA 266073 $19.99 1 90 - LINGERIE-BASIC 075192 $19.99 1 55 - LADIES HOSIERY 412884 $6.99 1 55 - LADIES HOSIERY 403240 $7.99 1 85 - GOURMET FOOD 965623 $4.99 A [NL] Sub...
+[2:41:41 PM] Identified: Unknown Vendor | Target Folder: 02 February
+[2:41:41 PM] ✅ Saved as: Unknown Vendor - 02-04-2026.pdf
+[2:44:01 PM] ---Application started---
+[2:44:28 PM] New file detected: Unknown Vendor - 02-04-2026.pdf
+[2:44:36 PM] DEBUG OCR (Unknown Vendor - 02-04-2026.pdf): TJ-MODK [NL] GREENVILLE MALL 1651 HWY 1 SOUTH GREENVILLE, MS 38701 United States 662-335-3784 [NL] REGULAR SALE [NL] 04 - BEST BRANDS CA 266073 $19.99 1 90 - LINGERIE-BASIC 075192 $19.99 1 55 - LADIES HOSIERY 412884 $6.99 1 55 - LADIES HOSIERY 403240 $7.99 1 85 - GOURMET FOOD 965623 $4.99 A [NL] Sub...
+[2:44:36 PM] Identified: T J Maxx | Target Folder: 02 February
+[2:44:36 PM] ✅ Saved as: T J Maxx - 02-04-2026.pdf
+[3:17:03 PM] New file detected: SCN_20260215_0256.pdf
+[3:17:12 PM] DEBUG OCR (SCN_20260215_0256.pdf): SLALK BAYOU WATER ASSOC. DSWW P.O. BOX 916 [NL] LELAND, MS 38756 [NL] Pan — FEF, [NL] re-Sorted View and pay your bills online : H at www.blackbayouwater.com irst Class Mail [NL] 12M3/20257 01/1772026 [NL] METER 217900 227200 READ [NL] USAGE 9300 gal [NL] AMOUNT .S. Postage Paid [NL] ELAND, MS 38756...
+[3:17:12 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[3:17:12 PM] ✅ Saved as: Unknown Vendor - 01-01-1772.pdf
+[3:17:58 PM] ---Application started---
+[3:18:21 PM] New file detected: Unknown Vendor - 01-01-1772.pdf
+[3:18:31 PM] DEBUG OCR (Unknown Vendor - 01-01-1772.pdf): SLALK BAYOU WATER ASSOC. DSWW P.O. BOX 916 [NL] LELAND, MS 38756 [NL] Pan — FEF, [NL] re-Sorted View and pay your bills online : H at www.blackbayouwater.com irst Class Mail [NL] 11/1 5/2025 01/1772026 [NL] METER 217900 227200 READ [NL] USAGE 9300 gal [NL] AMOUNT .S. Postage Paid [NL] ELAND, MS 3875...
+[3:18:31 PM] Identified: Black Bayou Water | Target Folder: 11 November
+[3:18:31 PM] ✅ Saved as: Black Bayou Water - 11-01-2025.pdf

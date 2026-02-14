@@ -1,0 +1,21 @@
+[6:59:15 AM] ---Application started---
+[7:16:10 AM] New file detected: New Scan.pdf
+[7:16:17 AM] DEBUG OCR (New Scan.pdf): P.O. BOX 916 LELAND, MS 38756 [NL] EK ASSOC. DSWW [NL] re–Sorted [NL] View and pay your bills online irst Class Mail at www.blackbayouwater.com [NL] 12/13/2025 217900 [NL] METER READ [NL] 01/17/2026 USAGE [NL] 227200 9300 gal AMOUNT .S. Postage Paid [NL] ELAND, MS 38756 [NL] Prior Balance [NL] Payme...
+[7:16:17 AM] Identified: Unknown Vendor | Target Folder: 12 December
+[7:17:07 AM] ✅ Saved as: Unknown Vendor - 12-13-2025.pdf
+[5:35:14 PM] New file detected: New Scan [2].pdf
+[5:35:14 PM] New file detected: New Scan [1].pdf
+[5:35:14 PM] New file detected: New Scan [4].pdf
+[5:35:14 PM] New file detected: New Scan [3].pdf
+[5:35:21 PM] DEBUG OCR (New Scan [2].pdf): 7671 Goodman Rd. Horn Lake. MS 38637 Phone 612-349-8585 [NL] 1/14/2026 Order Td: AGAMANEBAGRM [THs = Drive Thru [NL] Fripp oyee: Monique Harrison Closed By Employee: Selena E [NL] Dias [NL] 1 #2 Chicken Finger P ate Meal 111.79 1 (4) Finger Plate Zax Sauce $0.00 1 Fegular Fries 1 Fry 1 Small Drink H...
+[5:35:21 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[5:35:21 PM] ✅ Saved as: Unknown Vendor - 01-14-8585.pdf
+[5:35:25 PM] DEBUG OCR (New Scan [4].pdf): Thanks for shopping our friendly store. Deer Creek Hardware [NL] Co. [NL] 523 Hwy 82 East Leland, MS 38756 662-771-8030 [NL] ITEM QTY SALE/REG EXT 740265616065 1.00 7.59 7.59 3396744 CG [NL] GROMMET DESK BLK 2 IN [NL] 032076461041 1.00 4.99 4.99 0975722 PK [NL] CABLE TIE NATURAL 4IN [NL] 04524250979...
+[5:35:25 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[5:35:25 PM] ✅ Saved as: Unknown Vendor - 01-15-2026.pdf
+[5:35:29 PM] DEBUG OCR (New Scan [1].pdf): Thanks for shopping our friendly store. Deer Creek Hardware [NL] Co. [NL] 523 Hwy 82 East Leland, MS 38756 662-771-8030 [NL] ITEM QTY SALE/REG EXT 004 2.00 11.50 23.00 [NL] Each RIVER’S BEND COFFEE- 12 0Z [NL] 054000751301 1.00 3.49 3.49 6110266 EA [NL] SHOP TOWELS ROLL CASE DISPLA [NL] 645397002178...
+[5:35:29 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[5:35:29 PM] ✅ Saved as: Unknown Vendor - 01-17-2026.pdf
+[5:35:32 PM] DEBUG OCR (New Scan [3].pdf): DOUBLE QUCK 478 103 HIGHWAY82 INDIANOLA MS 87039 [NL] 01/20/2026 8:28:46 AM Register: 2 Trans #: 944 Op 1D: 81700 [NL] Your cashier: Mariah [NL] Blue Diamon Chili Lm 1.5 $2.49 101 Blue Diamond Almne Rstd $2.49 101 Yup! MIk Choc 14oz $3.69 101 [NL] Subtotal = $8.67 Tax = $0.61 [NL] Total = $9.28 Chan...
+[5:35:32 PM] Identified: Unknown Vendor | Target Folder: 01 January
+[5:35:32 PM] ✅ Saved as: Unknown Vendor - 01-20-2026.pdf
