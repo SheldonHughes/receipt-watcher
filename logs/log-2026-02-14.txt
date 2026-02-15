@@ -59,3 +59,12 @@
 [3:18:31 PM] DEBUG OCR (Unknown Vendor - 01-01-1772.pdf): SLALK BAYOU WATER ASSOC. DSWW P.O. BOX 916 [NL] LELAND, MS 38756 [NL] Pan — FEF, [NL] re-Sorted View and pay your bills online : H at www.blackbayouwater.com irst Class Mail [NL] 11/1 5/2025 01/1772026 [NL] METER 217900 227200 READ [NL] USAGE 9300 gal [NL] AMOUNT .S. Postage Paid [NL] ELAND, MS 3875...
 [3:18:31 PM] Identified: Black Bayou Water | Target Folder: 11 November
 [3:18:31 PM] ✅ Saved as: Black Bayou Water - 11-01-2025.pdf
+[3:35:25 PM] ---Application started---
+[3:35:40 PM] New file detected: Black Bayou Water - 1-30-206.pdf
+[3:35:51 PM] DEBUG OCR (Black Bayou Water - 1-30-206.pdf): SLALK BAYOU WATER ASSOC. DSWW P.O. BOX 916 [NL] LELAND, MS 38756 [NL] Pan — FEF, [NL] re-Sorted View and pay your bills online : H at www.blackbayouwater.com irst Class Mail [NL] 11/1 5/2025 01/1772026 [NL] METER 217900 227200 READ [NL] USAGE 9300 gal [NL] AMOUNT .S. Postage Paid [NL] ELAND, MS 3875...
+[3:35:51 PM] ✅ Saved as: Black Bayou Water - 1-30-206.pdf
+[3:55:25 PM] ---Application started---
+[4:02:14 PM] New file detected: SCN_20260214_1600.pdf
+[4:02:27 PM] DEBUG OCR (SCN_20260214_1600.pdf): BLACK BAYOU WATER ASSOC. DSWW [NL] P. 0. BOX 916 re-Sorted LELAND, MS 38756 [NL] View and pay your bills online i H at www.blackbayouwater.com irst Class Mail [NL] 12113720257 01/17/2026 USAGE AMOUNT -S. Postage Paid METER 217900 227200 9300 gal ELAND, MS 38756 [NL] ermit #11 Prior Balance 70.60 [NL...
+[4:02:27 PM] Identified: Black Bayou Water | Target Folder: 01 January
+[4:02:27 PM] ✅ Saved as: Black Bayou Water - 01-17-2026.pdf

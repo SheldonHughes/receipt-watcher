@@ -1,6 +1,6 @@
 import { appendFile, readdir, unlink, stat } from "node:fs/promises";
 import path from "node:path";
-import { LOG_PATH } from "./config.js"; // Add this to your config
+import { LOG_PATH, LOG_DAYS_TO_KEEP } from "./config.js"; // Add this to your config
 
 export async function updateLog(content) {
   const now = new Date();
@@ -21,8 +21,15 @@ export async function updateLog(content) {
 /**
  * Deletes log files older than 14 days
  */
-export async function pruneLogs(daysToKeep = 14) {
+export async function pruneLogs(daysToKeep = LOG_DAYS_TO_KEEP) {
   try {
+    // Safety check: if the path doesn't exist, there's nothing to prune!
+    // if (!(await fs.pathExists(LOG_PATH)))
+    //   updateLog(
+    //     `Log directory not found at ${LOG_PATH}. Skipping log pruning.`,
+    //   );
+    // return;
+
     const files = await readdir(LOG_PATH);
     const now = Date.now();
     const expiryMs = daysToKeep * 24 * 60 * 60 * 1000;

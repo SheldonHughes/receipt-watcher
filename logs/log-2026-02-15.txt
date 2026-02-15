@@ -1,0 +1,18 @@
+[4:46:18 PM] ---Application started---
+[4:47:02 PM] New file detected: New Scan.pdf
+[4:47:14 PM] DEBUG OCR (New Scan.pdf): .%£§Qfir_ [NL] No. 149643 [NL] PIT STOP QUICK LUBE #0001 408 HWY 82 WEST LELAND, MS 38756 662.686.0029 [NL] 02/05/2026 03:45 PM THANKYOUFROMTHEPWSTOPCREW [NL] Customer Vehicle [NL] MS. RACHEL HUGHES (REP) [NL] 387 662-- [NL] 2022 TOYOTA SIENNA ACCT # TDN124657 VIN: STDKRKECONS124657 [NL] Present Mileage: 100,348 Next Service Due on 5/6/2026 at 107,348 miles. [NL] Description Quantity Lubricant [NL] Part # Taxable [NL] Price [NL] BASIC SYNTHETIC SERVICE 4.75 [NL] Lubricant Description: WIPER BLAD...
+[4:47:14 PM] Identified: Pit Stop | Target Folder: 02 February
+[4:47:14 PM] ✅ Saved as: Pit Stop - 02-05-2026.pdf
+[4:47:14 PM] SUCCESS: Pit Stop (Pit Stop - 02-05-2026.pdf)
+[4:47:35 PM] New file detected: New Scan-2.pdf
+[4:47:40 PM] DEBUG OCR (New Scan-2.pdf): r [NL] Mail Payments to: Patricia Lee [NL] Washington County Tax Collector P.O. Box 9 [NL] Greenville, MS 38702 [NL] MOTOR VEHICLE LICENSE RENEWAL NOTIC [NL] 104 760 [NL] RETURN SERVICE REQUESTED [NL] VIN [NL] 1thgcr2f38da187165 $6.50 [NL] TAG CREDIT VALUATION [NL] 100 [NL] MAKE/YEAR [NL] HOND2013ACCORD S [NL] MODEL/BODY TITLE NUMBER [NL] MS051516160 [NL] EXP MONTH [NL] FEB [NL] TAG NUMBER [NL] WRB553 [NL] AD VALOREM REGISTRATION [NL] $7.63 $12.75 [NL] PRIVILEGE [NL] $15.00 [NL] SPECIAL FEE $.00...
+[4:47:40 PM] Identified: Patricia Lee, Tax Collector | Target Folder: Manual Review
+[4:47:40 PM] ✅ Saved as: New Scan-2.pdf
+[4:47:40 PM] SUCCESS: Patricia Lee, Tax Collector (New Scan-2.pdf)
+[5:19:35 PM] ---Application started---
+[5:20:19 PM] New file detected: New Scan-2.pdf
+[5:20:26 PM] DEBUG OCR (New Scan-2.pdf): r [NL] Mail Payments to: Patricia Lee [NL] Washington County Tax Collector P.O. Box 9 [NL] Greenville, MS 38702 [NL] MOTOR VEHICLE LICENSE RENEWAL NOTIC [NL] 104 760 [NL] RETURN SERVICE REQUESTED [NL] VIN [NL] 1thgcr2f38da187165 $6.50 [NL] TAG CREDIT VALUATION [NL] 100 [NL] MAKE/YEAR [NL] HOND2013ACCORD S [NL] MODEL/BODY TITLE NUMBER [NL] MS051516160 [NL] EXP MONTH [NL] FEB [NL] TAG NUMBER [NL] WRB553 [NL] AD VALOREM REGISTRATION [NL] $7.63 $12.75 [NL] PRIVILEGE [NL] $15.00 [NL] SPECIAL FEE $.00...
+[5:20:26 PM] Identified: Patricia Lee, Tax Collector | Target Folder: Manual Review
+[5:20:26 PM] ✅ Saved as: [NO DATE] Patricia Lee, Tax Collector - New Scan-2.pdf
+[5:20:26 PM] SUCCESS: Patricia Lee, Tax Collector ([NO DATE] Patricia Lee, Tax Collector - New Scan-2.pdf)
+[5:26:56 PM] ---Application started---

@@ -3,7 +3,7 @@ import * as fs from "fs-extra";
 import scribe from "scribe.js-ocr";
 import { extractDate } from "./dateExtractor.js";
 import { detectVendor } from "./vendorDetector.js";
-import { RECEIPTS_ROOT, MANUAL_REVIEW_DIR } from "./config.js";
+import { RECEIPTS_ROOT, MANUAL_REVIEW_DIR, DEBUG_MODE } from "./config.js";
 import { updateLog } from "./logger.js";
 
 const MONTH_FOLDERS = [
@@ -30,14 +30,16 @@ export async function processFile(filePath) {
     const results = await scribe.extractText({ pdfFiles: [filePath] });
     const text = Array.isArray(results) ? results[0] : results;
 
-    if (text) {
-      //Add ocr results to log for debugging
-      const cleanTextForLog = text.replace(/\n/g, " [NL] ").substring(0, 300);
-      await updateLog(
-        `DEBUG OCR (${path.basename(filePath)}): ${cleanTextForLog}...`,
-      );
+    // --- DEBUG OCR LOGGING ---
+    if (DEBUG_MODE && text) {
+      const snippet = text.replace(/\n/g, " [NL] ").substring(0, 500);
+      await updateLog(`DEBUG OCR (${path.basename(filePath)}): ${snippet}...`);
     }
+
     if (!text || text.trim().length === 0) {
+      await updateLog(
+        `EMPTY TEXT: ${path.basename(filePath)} moved to Manual Review.`,
+      );
       await moveToTarget(filePath, MANUAL_REVIEW_DIR, path.basename(filePath));
       return;
     }
@@ -54,6 +56,10 @@ export async function processFile(filePath) {
       const dateString = `${MM}-${DD}-${YYYY}`;
       finalFileName = `${vendor} - ${dateString}.pdf`;
     }
+    // If we couldn't find a date but did find a vendor, at least prefix with the vendor
+    else if (vendor && vendor !== "Unknown Vendor") {
+      finalFileName = `[NO DATE] ${vendor} - ${path.basename(filePath)}`;
+    }
 
     const targetDir = date
       ? path.join(RECEIPTS_ROOT, MONTH_FOLDERS[date.getMonth()])
@@ -66,7 +72,9 @@ export async function processFile(filePath) {
     );
 
     await moveToTarget(filePath, targetDir, finalFileName);
+    await updateLog(`SUCCESS: ${vendor} (${finalFileName})`);
   } catch (err) {
+    await updateLog(`CRITICAL ERROR: ${err.message}`);
     console.error(`💥 Error during processing:`, err.message);
     // Only try to move to manual review if the file still exists
     if (await fs.pathExists(filePath)) {

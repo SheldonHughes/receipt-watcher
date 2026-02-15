@@ -3,7 +3,9 @@
     "inbox": "D:/OneDrive/Scans",
     "receiptsRoot": "D:/OneDrive/Hughes Financial's/Receipts",
     "manualReview": "D:/OneDrive/Hughes Financial's/Receipts/Manual Review",
-    "logs": "C:/Users/sheld/Desktop/receipt-watcher/logs"
+    "logs": "C:/Users/sheld/receipt-watcher/logs",
+    "logDaysToKeep": 10,
+    "debugMode": true
   },
   "vendor": {
     "Posigen": ["posigen", "solar solutions"],
@@ -29,7 +31,12 @@
     "Walmart": ["walmart", "wa1mart", "WM Supercenter"],
     "Dollar General": ["dollar general", "d0llar general", "do11ar general"],
     "Julia R Hill": ["Julia R Hill", "Julia R", "Julia Hill"],
-    "Pit Stop": ["pit stop", "pitstop", "408 HWY 82 WEST"],
+    "Pit Stop": [
+      "pit stop",
+      "pitstop",
+      "408 HWY 82 WEST",
+      "pit stop quick lube"
+    ],
     "Panda Express": ["panda express", "panda expre55", "panda exp"],
     "T J Maxx": ["t j maxx", "tj maxx", "t.j. maxx", "tjmaxx.com", "TJ-MODK"],
     "David's Burgers": ["david's burgers", "davids burgers", "david's burg3rs"],
@@ -75,6 +82,12 @@
       "black bayou w4ter",
       "black bayou w@t3r",
       "blackbayouwater.com"
+    ],
+    "Patricia Lee, Tax Collector": [
+      "patricia lee tax collector",
+      "patricia lee",
+      "washington county tax collector",
+      "patricia l33 tax collector"
     ]
   }
 }

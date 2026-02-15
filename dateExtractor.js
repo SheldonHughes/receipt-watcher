@@ -3,47 +3,96 @@ const KEYWORDS = {
     /invoice date/i,
     /billing date/i,
     /bill date/i,
-    /receipt date/i,
     /transaction date/i,
     /date:/i,
     /sold on/i,
+    /service date/i,
   ],
-  NEGATIVE: [/due date/i, /exp/i, /delivery date/i, /statement date/i],
+  NEGATIVE: [
+    /due date/i,
+    /exp/i,
+    /delivery date/i,
+    /statement date/i,
+    /printed/i,
+    /shipped/i,
+  ],
 };
 
+// This regex looks for MM/DD/YYYY, MM-DD-YYYY, or YYYY-MM-DD
+// It also handles cases where OCR might put extra spaces
+const DATE_REGEX = /(\d{1,4}[.\/\-]\d{1,2}[.\/\-]\d{1,4})/g;
+
 export function extractDate(text) {
-  // 1. Find all potential dates (using your existing regex)
-  // Let's assume your regex finds dates and their indices in the string
-  const dateMatches = findAllDateMatches(text);
+  if (!text) return null;
+
+  const dateMatches = [];
+  let match;
+
+  // 1. Find every date in the document
+  while ((match = DATE_REGEX.exec(text)) !== null) {
+    const rawDate = match[0];
+    const parsedDate = parseDateString(rawDate);
+
+    if (parsedDate) {
+      dateMatches.push({
+        date: parsedDate,
+        index: match.index,
+        raw: rawDate,
+      });
+    }
+  }
 
   if (dateMatches.length === 0) return null;
-  if (dateMatches.length === 1) return dateMatches[0].date;
 
-  let bestMatch = { date: dateMatches[0].date, score: 0 };
+  // 2. Score the matches
+  let bestMatch = null;
+  let highestScore = -100;
 
   dateMatches.forEach((match) => {
-    let currentScore = 0;
+    let score = 0;
 
-    // 2. Look at the text immediately preceding the date (e.g., 40 characters)
-    const context = text
-      .substring(Math.max(0, match.index - 40), match.index)
-      .toLowerCase();
+    // Context check: look at the 40 characters before the date
+    const start = Math.max(0, match.index - 40);
+    const context = text.substring(start, match.index).toLowerCase();
 
-    // 3. Score the context
+    // Add points for "good" keywords
     KEYWORDS.POSITIVE.forEach((re) => {
-      if (re.test(context)) currentScore += 10;
+      if (re.test(context)) score += 20;
     });
+
+    // Subtract points for "bad" keywords
     KEYWORDS.NEGATIVE.forEach((re) => {
-      if (re.test(context)) currentScore -= 10;
+      if (re.test(context)) score -= 20;
     });
 
-    // 4. Tie-breaker: Usually, the date higher up in the document is the "main" one
-    currentScore -= (match.index / text.length) * 5;
+    // Tie-breaker: Prefer dates appearing earlier in the text (top of the page)
+    const positionPenalty = (match.index / text.length) * 10;
+    score -= positionPenalty;
 
-    if (currentScore > bestMatch.score) {
-      bestMatch = { date: match.date, score: currentScore };
+    if (score > highestScore) {
+      highestScore = score;
+      bestMatch = match.date;
     }
   });
 
-  return bestMatch.date;
+  return bestMatch;
+}
+
+/**
+ * Helper to turn a string like "01/28/2026" into a JS Date object
+ */
+function parseDateString(str) {
+  // Replace common OCR errors: 'l' or 'I' with '1', 'O' with '0'
+  const cleanStr = str.replace(/[lI]/g, "1").replace(/[O]/g, "0");
+  const d = new Date(cleanStr);
+
+  // Ensure it's a valid date and not in the distant future
+  if (isNaN(d.getTime())) return null;
+
+  // Basic sanity check: Reject dates from before 1990 or more than 1 year in the future
+  const year = d.getFullYear();
+  const currentYear = new Date().getFullYear();
+  if (year < 1990 || year > currentYear + 1) return null;
+
+  return d;
 }
