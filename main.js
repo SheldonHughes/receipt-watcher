@@ -1,9 +1,27 @@
-const { app, BrowserWindow, ipcMain, dialog } = require("electron");
-const fs = require("fs-extra");
-const path = require("path");
+import { app, BrowserWindow, ipcMain, dialog } from "electron";
+import fs from "fs-extra";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Reference to your existing settings logic
 const settingsPath = path.join(app.getPath("userData"), "settings.json");
+
+function createWindow() {
+  const win = new BrowserWindow({
+    title: "Receipt Watcher",
+    width: 800,
+    height: 600,
+  });
+  const startPathURL = path.join(__dirname, "index.html");
+
+  win.loadURL(startPathURL);
+}
+
+app.whenReady().then(() => {
+  createWindow();
+});
 
 ipcMain.handle("select-directory", async () => {
   const { canceled, filePaths } = await dialog.showOpenDialog({
