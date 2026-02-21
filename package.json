@@ -5,7 +5,8 @@
   "description": "A tool to watch for receipts",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "start-watch": "electronmon . --watch"
   },
   "dependencies": {
     "chokidar": "^5.0.0",

@@ -1,9 +1,13 @@
-import { app, BrowserWindow, ipcMain, dialog } from "electron";
+// import { app, BrowserWindow, ipcMain, dialog } from "electron";
+import pkg from "electron";
+const { app, BrowserWindow, ipcMain, dialog } = pkg;
 import fs from "fs-extra";
 import path from "path";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+console.log(__dirname);
 
 // Reference to your existing settings logic
 const settingsPath = path.join(app.getPath("userData"), "settings.json");
@@ -14,7 +18,8 @@ function createWindow() {
     width: 800,
     height: 600,
   });
-  const startPathURL = path.join(__dirname, "index.html");
+  const startPathURL = pathToFileURL(path.join(__dirname, "index.html")).href;
+  // console.log("Loading FilePath:", startPathURL);
 
   win.loadURL(startPathURL);
 }
