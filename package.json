@@ -10,6 +10,7 @@
   "dependencies": {
     "chokidar": "^5.0.0",
     "chrono-node": "^2.9.0",
+    "electron": "^40.6.0",
     "fs-extra": "^11.3.3",
     "node-windows": "^1.0.0-beta.8",
     "pdf-poppler": "^0.2.3",
