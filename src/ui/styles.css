@@ -3,6 +3,7 @@
   --sidebar-color: #2c3e50;
   --text-main: #333;
   --accent: #3498db;
+  --caution: #ffa500;
   --success: #27ae60;
   --danger: #c0392b;
 }
@@ -72,6 +73,31 @@ main {
   border-radius: 20px;
   font-size: 0.85rem;
   margin-right: 15px;
+}
+
+.exit-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.control-buttons {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  border-color: #333;
+}
+
+.control-button-total-shutdown {
+  background: var(--danger);
+  color: white;
+}
+
+.control-button-close-window {
+  background: var(--caution);
+  color: white;
 }
 
 .running {

@@ -16,6 +16,24 @@
 
     <main>
       <div id="dashboard" class="view active">
+        <div class="open_close">
+          <div class="exit-controls">
+            <button
+              class="control-buttons control-button-close-window"
+              onclick="window.close()"
+            >
+              Close Window (Keep Watching)
+            </button>
+
+            <button
+              class="control-buttons control-button-total-shutdown"
+              onclick="window.api.fullShutdown()"
+              class="danger-btn"
+            >
+              Total Shutdown
+            </button>
+          </div>
+        </div>
         <h1>Service Dashboard</h1>
         <div class="status-container">
           Status:
