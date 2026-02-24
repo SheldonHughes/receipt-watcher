@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt Watcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">ReceiptWatcher Pro</div>
+      <button onclick="showView('dashboard')">🏠 Dashboard</button>
+      <button onclick="showView('vendors')">🏭 Vendors</button>
+      <button onclick="showView('settings')">⚙️ Settings</button>
+    </nav>
+
+    <main>
+      <div id="dashboard" class="view active">
+        <h1>Service Dashboard</h1>
+        <div class="status-container">
+          Status:
+          <span id="status-badge" class="status-badge stopped">Stopped</span>
+          <button id="toggle-btn">Start Monitoring</button>
+        </div>
+
+        <div id="log-container">
+          <div id="log-header">Recent Activity</div>
+          <div id="log-content">Waiting for activity...</div>
+        </div>
+      </div>
+
+      <div id="vendors" class="view">
+        <h1>Vendor Manager</h1>
+        <div id="vendor-controls">
+          <button id="add-vendor-btn" class="primary-btn">
+            + Add New Vendor
+          </button>
+        </div>
+        <table class="vendor-table">
+          <thead>
+            <tr>
+              <th>Vendor Name</th>
+              <th>Keywords (OCR Triggers)</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="vendor-list-body"></tbody>
+        </table>
+      </div>
+
+      <div id="settings" class="view">
+        <h1>Configuration</h1>
+        <div class="setting-group">
+          <label>Inbox Directory</label>
+          <div class="path-input-row">
+            <input
+              type="text"
+              id="inbox-path"
+              readonly
+              placeholder="Select a folder..."
+            />
+            <button onclick="browseFolder('inbox')">Browse</button>
+          </div>
+        </div>
+        <div class="setting-group">
+          <label>Receipts Root</label>
+          <div class="path-input-row">
+            <input
+              type="text"
+              id="receipts-root"
+              readonly
+              placeholder="Select a folder..."
+            />
+            <button onclick="browseFolder('receipts')">Browse</button>
+          </div>
+        </div>
+        <p class="hint">
+          The Receipts Root must contain the 12 month folders (01 January,
+          etc.).
+        </p>
+      </div>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

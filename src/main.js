@@ -10,15 +10,23 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 console.log(__dirname);
 
 // Reference to your existing settings logic
-const settingsPath = path.join(app.getPath("userData"), "settings.json");
+const settingsPath = path.join(__dirname, "settings.json");
 
 function createWindow() {
   const win = new BrowserWindow({
     title: "Receipt Watcher",
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 800,
+    webPreferences: {
+      // Point to the preload file
+      preload: path.join(__dirname, "preload.js"),
+      nodeIntegration: false,
+      contextIsolation: true,
+    },
   });
-  const startPathURL = pathToFileURL(path.join(__dirname, "index.html")).href;
+  const startPathURL = pathToFileURL(
+    path.join(__dirname, "ui/index.html"),
+  ).href;
   // console.log("Loading FilePath:", startPathURL);
 
   win.loadURL(startPathURL);

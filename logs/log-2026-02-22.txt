@@ -1,0 +1,20 @@
+[8:52:08 PM] New file detected: Scan - 2026-02-21 20_49_44.pdf
+[8:52:08 PM] New file detected: Scan - 2026-02-21 20_50_10.pdf
+[8:52:08 PM] New file detected: Scan - 2026-02-21 20_50_32.pdf
+[8:52:09 PM] DEBUG OCR (Scan - 2026-02-21 20_49_44.pdf): Thanks for shopp ing oUr friend ly store [NL] Deer Creek Har dware Co. 523 Hwy 82 East Leland, MS 38756 [NL] 662-771-8030 [NL] HUGHES/RACHEL ITEM [NL] QTY SALE/REG EXT [NL] 0326645 70629 1.00 13.99 [NL] 13.99 [NL] 7320195 EA [NL] NIGHTLIGHT AUT0 WHITE 15AMP [NL] 076174840971 10.99 [NL] 10.99 [NL] 8054389 CO [NL] PLIER SLIP JOINT 6IN DIP HDL [NL] 076174840315 1.00 [NL] 13.99 13.99 [NL] 6949796 CG PLIER LONG NOSE 6IN 6I-MATH 076174102093 [NL] 1.00 6.99 [NL] 6.99 [NL] 6500755 CG [NL] KNIFE UTILITY ...
+[8:52:09 PM] Identified: Unknown Vendor | Target Folder: 05 May
+[8:52:09 PM] ✅ Saved as: Unknown Vendor - 05-01-2002.pdf
+[8:52:09 PM] SUCCESS: Unknown Vendor (Unknown Vendor - 05-01-2002.pdf)
+[8:52:09 PM] DEBUG OCR (Scan - 2026-02-21 20_50_10.pdf): Thanks for shopp ing oUr friend ly store. Deer Creek Har dware [NL] Co. [NL] 523 Hwy 82 East Leland, MS 38756 [NL] 662-771-8030 [NL] HUGHES/RACHEL ITEM [NL] QTY SALE/REG [NL] 051141346939 1.00 [NL] 4.99 [NL] 6880280 CG HOOK UTILITY MINI W/STRIP CL [NL] EXT 4.99 [NL] TOTAL $ [NL] SUBTOTAL $ TAX $ [NL] 4.99 0.35 [NL] 5.34 [NL] CREDIT CARD 5.34 [NL] CARD *********6104 AUTH XE59F4 [NL] EMPLOYEE TERM INV# [NL] TIME [NL] 2 149941 01:56 [NL] DATE 17-Feb-26 [NL] Your rece ipt guarantees your n0-hass le-...
+[8:52:09 PM] Identified: Unknown Vendor | Target Folder: Manual Review
+[8:52:09 PM] ✅ Saved as: Scan - 2026-02-21 20_50_10.pdf
+[8:52:09 PM] SUCCESS: Unknown Vendor (Scan - 2026-02-21 20_50_10.pdf)
+[8:52:10 PM] DEBUG OCR (Scan - 2026-02-21 20_50_32.pdf): Thanks for shopp ing oUr friend ly store Deer Creek Har dware [NL] Co. [NL] 523 Hwy 82 East Le land, MS 38756 [NL] 662-771-8030 [NL] MG ITEM QTY SALE/REG [NL] EXT [NL] 076174102093 -1.00 6.99 [NL] -6.99 [NL] 6500755 CG KNIFE UTILITY HVY DUTY 5-1/2 [NL] 076174101799 1.00 [NL] 9.99 9.99 [NL] 6794044 CG KNIFE UTILITY INTERL CK 5-5/8 [NL] Name: MG [NL] SUBTOTAL $ 3.00 [NL] TAX 0.21 [NL] TOTAL $ 3.21 [NL] CREDIT CARD 3.21 [NL] CARD *****6104 [NL] AUTH XAEC3C [NL] I AGREE TO PAY THE ABOVE TOTAL ACCORD...
+[8:52:10 PM] Identified: Unknown Vendor | Target Folder: 05 May
+[8:52:10 PM] ✅ Saved as: Unknown Vendor - 05-01-2002-1.pdf
+[8:52:10 PM] SUCCESS: Unknown Vendor (Unknown Vendor - 05-01-2002.pdf)
+[8:58:07 PM] New file detected: Unknown Vendor - 05-01-2002.pdf
+[8:58:07 PM] DEBUG OCR (Unknown Vendor - 05-01-2002.pdf): Thanks for shopp ing oUr friend ly store [NL] Deer Creek Har dware Co. 523 Hwy 82 East Leland, MS 38756 [NL] 662-771-8030 [NL] HUGHES/RACHEL ITEM [NL] QTY SALE/REG EXT [NL] 0326645 70629 1.00 13.99 [NL] 13.99 [NL] 7320195 EA [NL] NIGHTLIGHT AUT0 WHITE 15AMP [NL] 076174840971 10.99 [NL] 10.99 [NL] 8054389 CO [NL] PLIER SLIP JOINT 6IN DIP HDL [NL] 076174840315 1.00 [NL] 13.99 13.99 [NL] 6949796 CG PLIER LONG NOSE 6IN 6I-MATH 076174102093 [NL] 1.00 6.99 [NL] 6.99 [NL] 6500755 CG [NL] KNIFE UTILITY ...
+[8:58:07 PM] Identified: Unknown Vendor | Target Folder: 05 May
+[8:58:07 PM] ✅ Saved as: Unknown Vendor - 05-01-2002.pdf
+[8:58:07 PM] SUCCESS: Unknown Vendor (Unknown Vendor - 05-01-2002.pdf)
